@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "104711256316",
+    "firebase_url": "https://swifeyramhacks.firebaseio.com",
+    "project_id": "swifeyramhacks",
+    "storage_bucket": "swifeyramhacks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:104711256316:android:f870107ab6d09ee7",
+        "android_client_info": {
+          "package_name": "hackerbc.swifey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "104711256316-ejnduuffo18j12nknjd9h8nih58n9l4t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQiKZr7dC1NdKd1M0pNma7ARCEitnjYD8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
