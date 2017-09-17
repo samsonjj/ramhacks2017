@@ -1,4 +1,4 @@
-package com.example.currentplacedetailsonmap;
+package com.example.SwifeyRamHacks;
 
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
