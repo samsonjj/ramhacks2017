@@ -75,9 +75,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if(task.isSuccessful()) {
                     //success
                     Toast.makeText(MainActivity.this,"Registered Successfully", Toast.LENGTH_SHORT).show();
+                    progressDialog.dismiss();
                 } else {
                     Toast.makeText(MainActivity.this,"Failed to Register, Please try again", Toast.LENGTH_SHORT).show();
-
+                    progressDialog.dismiss();
                 }
 
             }
