@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(firebaseAuth.getCurrentUser() != null) {
             //next activity
             finish();
-            startActivity(new Intent(getApplicationContext(), MapsActivityCurrentPlace.class));
+            startActivity(new Intent(getApplicationContext(), HomeActivity.class));
 
         }
 
