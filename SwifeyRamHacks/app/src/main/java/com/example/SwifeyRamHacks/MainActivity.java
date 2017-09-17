@@ -1,6 +1,7 @@
 package com.example.SwifeyRamHacks;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -34,6 +35,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         firebaseAuth = FirebaseAuth.getInstance();
+
+        if(firebaseAuth.getCurrentUser() != null) {
+            //next activity
+            finish();
+            startActivity(new Intent(getApplicationContext(), MapsActivityCurrentPlace.class));
+
+        }
 
         progressDialog = new ProgressDialog(this);
 
@@ -93,6 +101,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if(view == textViewSignin) {
             //will open sign in
+            startActivity(new Intent(this, LoginActivity.class));
         }
     }
 }
