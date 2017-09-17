@@ -34,12 +34,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         firebaseAuth = FirebaseAuth.getInstance();
 
-        if(firebaseAuth.getCurrentUser() != null) {
-            //next activity
-            finish();
-            startActivity(new Intent(getApplicationContext(), MapsActivityCurrentPlace.class));
-
-        }
+//        if(firebaseAuth.getCurrentUser() != null) {
+//            //next activity
+//            finish();
+//            startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+//
+//        }
 
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);

@@ -49,7 +49,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         if(view==buttonReceiptCamera) {
             Toast.makeText(this, "Opening Receipt Camera", Toast.LENGTH_SHORT).show();
 
-//            startActivity(new Intent(his, foodCamera.class));
+//            startActivity(new Intent(his, receiptCamera.class));
         }
 
         if(view==buttonTransactions) {
