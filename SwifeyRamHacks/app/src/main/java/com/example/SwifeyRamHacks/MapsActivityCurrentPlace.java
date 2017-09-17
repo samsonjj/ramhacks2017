@@ -16,6 +16,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
+import com.example.SwifeyRamHacks.R;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.places.GeoDataClient;
@@ -33,10 +34,8 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+//An activity that displays a map showing the place at the device's current location.
 
-/**
- * An activity that displays a map showing the place at the device's current location.
- */
 public class MapsActivityCurrentPlace extends AppCompatActivity
         implements OnMapReadyCallback {
 
