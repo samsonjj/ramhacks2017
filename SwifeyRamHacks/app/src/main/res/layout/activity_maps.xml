@@ -4,5 +4,9 @@
     android:name="com.google.android.gms.maps.SupportMapFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     tools:context="com.example.SwifeyRamHacks.MapsActivityCurrentPlace" />
 
+=======
+    tools:context="com.example.SwifeyRamHacks.MapsActivityCurrentPlace" />
+>>>>>>> 189aa8134f8c14073d561dee2dd3f6a2bba60a10
