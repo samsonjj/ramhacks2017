@@ -82,12 +82,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()) {
                     //success
+                    finish();
+                    startActivity(new Intent(getApplicationContext(), MapsActivityCurrentPlace.class));
                     Toast.makeText(MainActivity.this,"Registered Successfully", Toast.LENGTH_SHORT).show();
-                    progressDialog.dismiss();
+
                 } else {
-                    Toast.makeText(MainActivity.this,"Failed to Register, Please try again", Toast.LENGTH_SHORT).show();
-                    progressDialog.dismiss();
+                    Toast.makeText(MainActivity.this,"Failed to Register, Make Sure Password is more than 6 characters", Toast.LENGTH_LONG).show();
+
                 }
+                progressDialog.dismiss();
 
             }
         });

@@ -22,7 +22,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private Button buttonSignIn;
     private EditText editTextEmail;
     private EditText editTextPassword;
-    private TextView textViewSignIn;
+    private TextView textViewSignUp;
 
     private FirebaseAuth firebaseAuth;
     private ProgressDialog progressDialog;
@@ -44,11 +44,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
         buttonSignIn = (Button) findViewById(R.id.buttonSignin);
-        textViewSignIn = (TextView) findViewById(R.id.textViewSignin);
+        textViewSignUp = (TextView) findViewById(R.id.textViewSignUp);
 
         progressDialog = new ProgressDialog(this);
         buttonSignIn.setOnClickListener(this);
-        textViewSignIn.setOnClickListener(this);
+        textViewSignUp.setOnClickListener(this);
 
 
 
@@ -97,7 +97,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             userLogin();
         }
 
-        if(view == textViewSignIn) {
+        if(view == textViewSignUp) {
             finish();
             startActivity(new Intent(this, MainActivity.class));
         }
