@@ -14,7 +14,9 @@
         android:layout_centerVertical="true"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/linearLayout">
 
         <EditText
             android:inputType="textEmailAddress"
@@ -33,19 +35,30 @@
 
         <Button
             android:layout_margin="10dp"
-            android:id="@+id/buttonRegister"
-            android:text="Register User"
+            android:id="@+id/buttonSignin"
+            android:text="Sign In"
             android:textAlignment="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <TextView
             android:textAlignment="center"
-            android:text="Already Registered? Sign in here"
-            android:id="@+id/textViewSignin"
+            android:text="No Account? Sign Up Here"
+            android:id="@+id/textViewSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/UserLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="4.15"
+        android:text="User Login"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 
 </RelativeLayout>
