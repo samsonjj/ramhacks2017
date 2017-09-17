@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if(task.isSuccessful()) {
                     //success
                     finish();
-                    startActivity(new Intent(getApplicationContext(), MapsActivityCurrentPlace.class));
+                    startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                     Toast.makeText(MainActivity.this,"Registered Successfully", Toast.LENGTH_SHORT).show();
 
                 } else {
